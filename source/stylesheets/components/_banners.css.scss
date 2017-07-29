@@ -1,0 +1,39 @@
+.home-banner {
+  height: 100vh;
+  position: relative;
+  background-color: #F7F7F7;
+  .home-banner-content {
+    width: 100%;
+    text-align: center;
+    h1 {
+      font-size: 60px;
+    }
+  }
+  canvas {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+.blue-banner {
+  background: linear-gradient(to right, #141e30, #243b55);
+  color: white;
+}
+
+.banner {
+  padding: 100px 0;
+  .banner-title {
+    text-align: center;
+    h2 {
+      font-weight: bold;
+      font-size: 35px;
+      margin-bottom: 100px;
+      margin-top: 0px;
+    }
+  }
+  .banner-content-big {
+    font-size: 20px;
+  }
+}
+

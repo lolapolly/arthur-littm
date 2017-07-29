@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+
+    <!-- For Bootstrap responsiveness -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title>Arthur Littmann | Web developer</title>
+
+    <meta name="description" content="I decided to learn how to code to enter the tech industry. Now I work as a web developer and teacher for one of the leading coding bootcamps in the world."/>
+
+    <meta property="og:title" content="Arthur Littmann | Web developer"/>
+    <meta property="og:image" content="http://i.imgur.com/oS1iShx.png"/>
+    <meta property="og:site_name" content="arthurlittmann.com"/>
+    <meta property="og:description" content="I decided to learn how to code to enter the tech industry. Now I work as a web developer and teacher for one of the leading coding bootcamps in the world."/>
+
+    <%= stylesheet_link_tag "all" %>
+    <%= javascript_include_tag  "all" %>
+
+  </head>
+
+  <body>
+    <%= yield %>
+    <%= partial "layouts/footer" %>
+  </body>
+</html>
