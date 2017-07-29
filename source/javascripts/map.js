@@ -289,3 +289,18 @@ function getStyle() {
         ];
         return styles
       }
+
+function createMap() {
+  var handler = Gmaps.build('Google', { markers: { clusterer: undefined }});
+  handler.buildMap({ internal: { id: 'map' }, provider: { scrollwheel: false, zoomControl: false, styles: getStyle() } }, function(){
+    markers = handler.addMarkers([
+      {
+        "lat": 51.5188,
+        "lng": 0.0667,
+      },
+    ]);
+    handler.bounds.extendWith(markers);
+    handler.fitMapToBounds();
+    handler.getMap().setZoom(2);
+  });
+};
