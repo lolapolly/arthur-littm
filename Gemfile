@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+gem 'middleman-gh-pages'
+
 gem "middleman", "~> 3.4"
 
 # For faster file watcher updates on Windows:
