@@ -1,4 +1,3 @@
-## Démarrer un nouveau projet.
+## My personal website.
 
-1. Forkez le repo
-1. Renommez-le puis clonez-le sur votre ordinateur
+Le me know what you think of  [it](http://www.arthurlittmann.com).
