@@ -1,3 +1,8 @@
+<a class="logo-scroll hidden-xs" href="#">
+  <%# image_tag('logo.png') %>
+  <span id="logo-target">a</span>
+</a>
+
 <div class="home-banner">
   <div class="navbar">
     <div class="logo">
@@ -165,6 +170,9 @@
       backDelay: 2000,
       loop: true
     });
+
+    // SCROLL LOGO
+    logoScroll()
 
     // MATTER.JS
     // launchNewtonsCradle()
