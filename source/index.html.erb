@@ -51,9 +51,9 @@
       <div class="col-xs-offset-1 col-xs-10">
         <div class="banner-content-big text-justify">
           <p>I am a <%= (Time.now.year - 1994).floor %> years old developer and self-taught designer. I was born in France but I moved to Italy where I lived for 15 years, after that I went to study business at ESSEC Business School in Paris for 4 years. During my years of studies I had the chance to live abroad in Stirling, Scotland and Sheffield, England. I also had the opportunity to work with a digital startup called <a href="https://www2.lekiosk.com/" target="_blank">LeKiosk</a>, which gave me my first insight of what developers could achieve! After graduating I decided to learn how to code to enter the tech industry.</p>
-          <p>After I finished Le Wagon's coding bootcamp I started freelancing on various projects including <a href="http://cap-vauban.com/" target="_blank">holiday rental platform</a> and a <a href="http://like-minded.tech/" target="_blank">"TripAdvisor" for friends</a>.</p>
+          <p>I decided to learn to code at Le Wagon coding bootcamp in London, a 9 week intensive program, during which I managed to build, with other students, one of my projects, a  <a href="http://like-minded.tech/" target="_blank">"TripAdvisor" for friends</a>. After the bootcamp I started freelancing on various projects, where I consolidated my skills of developer and taught myself UI/UX design.</p>
 
-          <p>After that I started as a Teaching Assistant on the following batches in Le Wagon London, and I am now a full-time member of the team running Le Wagon, as a teacher and developer.</p>
+          <p>I was then asked to become a Teaching Assistant on the following batches in Le Wagon London to help out students during the daily challenges, and I am now a full-time member of the team running Le Wagon, as a teacher and developer. I am mainly working from London, but I occasionnaly work from other cities where Le Wagon is present, like Paris, Berlin and many others.</p>
 
           <p>During my free time I like to make record and edit <a href="https://www.youtube.com/channel/UCC6p0L9affF4y4iIxB5jWoQ" target="_blank">videos</a> of my travels or my hobbies like snowboarding, scubadiving, cycling.</p>
         </div>
@@ -118,6 +118,38 @@
 <div class="blue-banner banner">
   <div class="container">
     <div class="banner-title">
+      <h2>My skills</h2>
+    </div>
+    <div class="row">
+      <% data.skills.each_with_index do |skill, index| %>
+
+        <div class="col-xs-3 col-md-2">
+          <div class="skill-card">
+            <div class="skill-circle" id="skill-<%= index %>" data-circle="<%= skill['level'] %>">
+
+            </div>
+            <h4 class="skill-title"><%= skill['title'] %></h4>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+<div class="banner">
+  <div class="container">
+    <div class="banner-title">
+      <h2>Projects</h2>
+    </div>
+    <div>
+
+    </div>
+  </div>
+</div>
+
+<div class="blue-banner banner">
+  <div class="container">
+    <div class="banner-title">
       <h2>Want to get in touch ?</h2>
     </div>
     <div>
@@ -158,6 +190,14 @@
 
 <script>
   $( document ).ready(function() {
+
+    <% data.skills.each_with_index do |skill, index| %>
+    var id = "#skill-<%= index %>";
+      launchSkills(id, <%= skill['level'].to_f %>);
+    <% end %>
+
+
+
     // TYPED.JS
     $("#typed-target").typed({
       strings: ["web designer", "video editor", "traveler", "frontend dev", "backend dev", "snowboarder", "business developer", "scubadiver", "teacher", "fullstack developer"],

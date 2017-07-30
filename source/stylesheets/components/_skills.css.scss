@@ -1,0 +1,17 @@
+.skill-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.skill-circle {
+  margin: 10px;
+  width: 130px;
+  height: 130px;
+}
+
+.skill-title {
+  font-family: $base-font;
+  font-weight: normal;
+}
