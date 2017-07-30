@@ -6,7 +6,7 @@ function launchSkills(id, percentage) {
     duration: 4000,
     easing: 'bounce',
     strokeWidth: 10,
-    from: {color: '#121C28', a:0},
+    from: {color: '#1E3248', a:0},
     to: {color: '#4172A9', a:1},
     // Set default step function for all animate calls
     step: function(state, circle) {
