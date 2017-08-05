@@ -297,6 +297,7 @@ function createMap() {
       {
         "lat": 51.5188,
         "lng": 0.0667,
+        "icon": "/images/mapicon.png"
       },
     ]);
     handler.bounds.extendWith(markers);

@@ -1,12 +1,44 @@
 - level: 1
   title: "HTML &amp; CSS"
+  start_color: '#1E3248'
+  end_color: '#4172A9'
+  class: 'margin-bottom'
+
 - level: 0.9
   title: "Ruby on Rails"
-- level: 0.9
-  title: "Sketch"
+  start_color: '#1E3248'
+  end_color: '#4172A9'
+  class: 'margin-bottom'
+
 - level: 0.6
   title: "JavaScript"
-- level: 0.3
-  title: "AJAX"
-- level: 0.8
+  start_color: '#1E3248'
+  end_color: '#4172A9'
+  class: 'margin-bottom'
+
+- level: 0.5
+  title: "SQL"
+  start_color: '#1E3248'
+  end_color: '#4172A9'
+  class: 'margin-bottom'
+
+- level: 0.9
+  title: "Sketch"
+  start_color: '#1E3248'
+  end_color: '#4172A9'
+
+- level: 0.7
   title: "Final Cut Pro X"
+  start_color: '#1E3248'
+  end_color: '#4172A9'
+
+- level: 0.8
+  title: "Sublime Text"
+  start_color: '#1E3248'
+  end_color: '#4172A9'
+
+- level: 0.3
+  title: "Photoshop"
+  start_color: '#1E3248'
+  end_color: '#4172A9'
+

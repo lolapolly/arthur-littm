@@ -1,4 +1,4 @@
-function launchSkills(id, percentage) {
+function launchSkills(id, percentage, start_color, end_color) {
   var bar = new ProgressBar.Circle(id, {
     color: '#FFFFFF',
     trailColor: '#FFFFFF',
@@ -6,8 +6,8 @@ function launchSkills(id, percentage) {
     duration: 4000,
     easing: 'bounce',
     strokeWidth: 10,
-    from: {color: '#1E3248', a:0},
-    to: {color: '#4172A9', a:1},
+    from: {color: start_color, a:0},
+    to: {color: end_color, a:1},
     // Set default step function for all animate calls
     step: function(state, circle) {
       circle.path.setAttribute('stroke', state.color);
