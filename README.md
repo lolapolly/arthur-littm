@@ -1,3 +1,4 @@
 ## My personal website.
 
-Le me know what you think of  [it](http://www.arthurlittmann.com).
+Let me know what you think: [arthurlittmann.com](http://www.arthurlittmann.com).
+
