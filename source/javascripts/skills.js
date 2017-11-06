@@ -4,7 +4,7 @@ function launchSkills(id, percentage, start_color, end_color) {
     trailColor: '#FFFFFF',
     trailWidth: 2,
     duration: 4000,
-    easing: 'bounce',
+    easing: 'easeInOut',
     strokeWidth: 10,
     from: {color: start_color, a:0},
     to: {color: end_color, a:1},

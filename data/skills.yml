@@ -17,10 +17,20 @@
   class: 'margin-bottom'
 
 - level: 0.5
-  title: "SQL"
+  title: "ES6"
   start_color: '#1E3248'
   end_color: '#4172A9'
   class: 'margin-bottom'
+
+- level: 0.5
+  title: "SQL"
+  start_color: '#1E3248'
+  end_color: '#4172A9'
+
+- level: 0.3
+  title: "React"
+  start_color: '#1E3248'
+  end_color: '#4172A9'
 
 - level: 0.9
   title: "Sketch"
@@ -31,14 +41,3 @@
   title: "Final Cut Pro X"
   start_color: '#1E3248'
   end_color: '#4172A9'
-
-- level: 0.8
-  title: "Sublime Text"
-  start_color: '#1E3248'
-  end_color: '#4172A9'
-
-- level: 0.3
-  title: "Photoshop"
-  start_color: '#1E3248'
-  end_color: '#4172A9'
-
