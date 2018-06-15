@@ -101,8 +101,8 @@
       </div>
       <div class="col-xs-12 col-md-4">
         <div class="recommendation-card">
-          <p>Always keen to help out and try to get to the bottom of the problem you have. Really liked his ideas with front end too, he was always suggesting ways to improve or restructure.</p>
-          <span>Jamie, Student from Le Wagon London</span>
+          <p>Arthur takes the cake on all fronts - as a teacher and tutor he's kind and patient, which alone are nice, but he is also super knowledgable and good at guiding students to their own solutions. Plus, he's an all around awesome human.</p>
+          <span>Asia, Student from Le Wagon London</span>
         </div>
       </div>
       <div class="col-xs-12 col-md-4">
@@ -142,16 +142,24 @@
 <div class="banner">
   <div class="container">
     <div class="banner-title">
-      <h2>My work</h2>
+      <h2>What am I doing ?</h2>
     </div>
-    <div class="row">
-      <% data.stuff.each do |project| %>
-        <div class="col-xs-12 col-md-6">
-          <div class="project-card">
-          <%= image_tag(project["image"]) %>
-          </div>
-        </div>
+    <div class="row videos-slick">
+      <% data.videos.each do |video| %>
+          <iframe class="yt-video" src="https://www.youtube.com/embed/<%= video['id'] %>?rel=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
       <% end %>
+    </div>
+    <hr class="separator">
+    <div class="row">
+
+    <% data.instagram.each do |picture| %>
+      <div class="col-xs-12 col-sm-6 col-md-3">
+        <div class="insta-card">
+          <a href="<%= picture['url'] %>" target="_blank" class="insta-link"></a>
+          <img class="instagram-picture" src="<%= picture['src'] %>">
+        </div>
+      </div>
+    <% end %>
     </div>
   </div>
 </div>
@@ -177,18 +185,7 @@
   </div>
 </div>
 
-<div class="banner">
-  <div class="container">
-    <div class="banner-title">
-      <h2>What am I doing ?</h2>
-    </div>
-    <div class="row videos-slick">
-      <% data.videos.each do |video| %>
-          <iframe class="yt-video" src="https://www.youtube.com/embed/<%= video['id'] %>?rel=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
-      <% end %>
-    </div>
-  </div>
-</div>
+
 
 <!-- GMAP -->
 <script src="https://maps.google.com/maps/api/js?key=AIzaSyBND4RH6r8iCF-17UMg__P3FBLaEaufv5Y"></script>

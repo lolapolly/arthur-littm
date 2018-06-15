@@ -1,0 +1,32 @@
+.separator {
+  margin: 50px auto;
+  width: 500px;
+}
+
+.instagram-picture {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: all .3s;
+}
+
+.insta-card {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 250px;
+  margin-bottom: 20px;
+}
+
+.insta-card:hover .instagram-picture {
+  transform: scale(1.2);
+}
+
+.insta-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
