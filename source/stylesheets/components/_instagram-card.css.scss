@@ -8,6 +8,7 @@
   width: 100%;
   object-fit: cover;
   transition: all .3s;
+  filter: grayscale(1);
 }
 
 .insta-card {
@@ -18,8 +19,27 @@
   margin-bottom: 20px;
 }
 
+.insta-card-country {
+  bottom: 10px;
+  position: absolute;
+  right: 10px;
+  margin: 0;
+  color: black;
+  background-color: white;
+  border-radius: 2px;
+  padding: 5px 10px;
+  font-weight: bold;
+  font-size: 20px;
+  transition: .3s;
+}
+
 .insta-card:hover .instagram-picture {
   transform: scale(1.2);
+  filter: grayscale(0);
+}
+
+.insta-card:hover .insta-card-country {
+  right: -200px;
 }
 
 .insta-link {
