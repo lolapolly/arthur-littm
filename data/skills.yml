@@ -4,38 +4,41 @@
   end_color: '#4172A9'
   class: 'margin-bottom'
 
-- level: 0.8
-  title: "JavaScript &amp; ES6"
-  start_color: '#1E3248'
-  end_color: '#4172A9'
-  class: 'margin-bottom'
-
-- level: 0.7
-  title: "React &amp; Redux"
-  start_color: '#1E3248'
-  end_color: '#4172A9'
-  class: 'margin-bottom'
-
 - level: 1
   title: "HTML &amp; CSS"
   start_color: '#1E3248'
   end_color: '#4172A9'
   class: 'margin-bottom'
 
-- level: 0.5
-  title: "SQL"
+- level: 1
+  title: "Sketch"
   start_color: '#1E3248'
   end_color: '#4172A9'
 
 - level: 0.9
-  title: "Sketch"
+  title: "JavaScript &amp; ES6"
   start_color: '#1E3248'
   end_color: '#4172A9'
+  class: 'margin-bottom'
 
 - level: 0.7
   title: "Final Cut Pro X"
   start_color: '#1E3248'
   end_color: '#4172A9'
+
+- level: 0.6
+  title: "React &amp; Redux"
+  start_color: '#1E3248'
+  end_color: '#4172A9'
+  class: 'margin-bottom'
+
+
+- level: 0.5
+  title: "SQL"
+  start_color: '#1E3248'
+  end_color: '#4172A9'
+
+
 
 - level: 0.3
   title: "Adobe After Effects"
