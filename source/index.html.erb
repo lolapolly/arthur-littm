@@ -54,13 +54,13 @@
 
           <hr class="separator">
 
-          <h3>💼 Experiences</h3>
+          <h3>💼 Experience</h3>
           <ul>
             <li>
               <strong>Le Wagon</strong> (Jan 2017 - Present), full-time employee and part of the team running things in London. I split my time between class management and engineering. Teaching all modules of the bootcamp (Ruby, OOP, Databases, Frontend, Javascript & Rails), coaching new teachers and developing the internal educational platforms.
             </li>
             <li>
-              <strong>LeKiosk</strong> (Jan 2015 - Jun 2015), business development internship for an up and coming digital start up, taking care of sales, accounting and B2B partnerships. That's where I first saw developers at work which gave me the drive to learn how to code myself.
+              <strong>LeKiosk</strong> (Jan 2015 - Jun 2015), business development internship for an up and coming digital start up in Paris, taking care of sales, accounting and B2B partnerships. That's where I first saw developers at work which gave me the drive to learn how to code myself.
             </li>
           </ul>
           <hr class="separator">
@@ -70,10 +70,10 @@
               <strong>Le Wagon</strong> batch #41 (Oct 2016 - Dec 2016), I decided to learn to code at Le Wagon coding bootcamp in London, a 9 week intensive program, during which I managed to build, with other students, one of my projects and first ever web app, a <a href="https://like-minded-app.herokuapp.com/">"TripAdvisor" for friends</a>.
             </li>
             <li>
-              <strong>ESSEC Business School</strong> (Sep 2012 - Jul 2016) Bachelor in Business Administration during which I studied mostly management, entrepreneurship & marketing. I also had the chance to study abroad twice, in Stirling & Sheffield (UK).
+              <strong>ESSEC Business School</strong> (Sep 2012 - Jul 2016) Bachelor in Business Administration in Paris during which I studied mostly management, entrepreneurship & marketing. I also had the chance to study abroad twice, in Stirling & Sheffield (UK).
             </li>
             <li>
-              <strong>European School</strong> (Sep 1998 - Jul 2012), international school where I spent time with people from all around the world and learned how to speak 4 languages fluently.
+              <strong>European School</strong> (Sep 1998 - Jul 2012), international school in Varese, Italy, where I spent time with people from all around the world and learned how to speak 4 languages fluently.
             </li>
           </ul>
           <hr class="separator">
@@ -174,23 +174,27 @@
     <div class="banner-title">
       <h2>What am I up to ?</h2>
     </div>
+    <div class="row">
+      <% data.instagram.each_with_index do |picture, index| %>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <div class="insta-card <%= 'insta-margin-bottom' if index <= 3 %>">
+            <a href="<%= picture['url'] %>" target="_blank" class="insta-link"></a>
+            <img class="instagram-picture" src="<%= picture['src'] %>">
+            <h3 class="insta-card-country"><%= picture['country'] %></h3>
+          </div>
+        </div>
+      <% end %>
+    </div>
+    <hr class="separator">
     <div class="row videos-slick">
       <% data.videos.each do |video| %>
           <iframe class="yt-video" src="https://www.youtube.com/embed/<%= video['id'] %>?rel=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
       <% end %>
     </div>
-    <hr class="separator">
-    <div class="row">
-    <% data.instagram.each do |picture| %>
-      <div class="col-xs-12 col-sm-6 col-md-3">
-        <div class="insta-card">
-          <a href="<%= picture['url'] %>" target="_blank" class="insta-link"></a>
-          <img class="instagram-picture" src="<%= picture['src'] %>">
-          <h3 class="insta-card-country"><%= picture['country'] %></h3>
-        </div>
-      </div>
-    <% end %>
-    </div>
+    <p class="padded-top text-right">
+      <a href="https://www.youtube.com/channel/UCC6p0L9affF4y4iIxB5jWoQ">See more 🎬</a>
+    </p>
+
   </div>
 </div>
 
