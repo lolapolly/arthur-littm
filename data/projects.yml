@@ -1,0 +1,6 @@
+- img: webdesigner.png
+  url: http://www.webdesigner.world/
+  working: true
+- img: likeminded.png
+  url: https://like-minded-app.herokuapp.com/
+  working: false

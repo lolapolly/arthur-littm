@@ -4,6 +4,11 @@
   position: relative;
 }
 
-// .project-card:hover img {
-//   transform: rotateY(180deg);
-// }
+.project-card .project-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}

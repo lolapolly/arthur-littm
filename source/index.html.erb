@@ -175,16 +175,16 @@
       <h2>My work</h2>
     </div>
     <div class="row">
-      <div class="col-xs-12 col-md-6">
-        <div class="project-card">
-          <%= image_tag "webdesigner.png" %>
+      <% data.projects.each do |project| %>
+        <div class="col-xs-12 col-md-6">
+          <div class="project-card">
+            <%= image_tag project.img %>
+            <% if project.working %>
+              <%= link_to "", project.url, target: "_blank", class: "project-link"  %>
+            <% end %>
+          </div>
         </div>
-      </div>
-      <div class="col-xs-12 col-md-6">
-        <div class="project-card">
-          <%= image_tag "likeminded.png" %>
-        </div>
-      </div>
+      <% end %>
     </div>
   </div>
 </div>

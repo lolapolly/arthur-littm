@@ -31,7 +31,7 @@
   <body>
     <%= yield %>
     <%= partial "layouts/footer" %>
-
+    <%= yield(:after_js) %>
 
   </body>
 </html>
