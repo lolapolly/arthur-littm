@@ -3,6 +3,7 @@
   background-color: white;
   box-shadow: 0 0 20px rgba(0,0,0,0.1);
   border-radius: 2px;
+  margin-bottom: 20px;
   img {
     width: 100%;
     transition: .5s;
@@ -17,6 +18,14 @@
       font-family: $base-font;
       color: #243b55;
     }
+  }
+  .disabled-project {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    background: rgba(0,0,0,0.3);
+    padding: 5px 10px;
+    color: white;
   }
 }
 

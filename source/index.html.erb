@@ -181,6 +181,8 @@
             <%= image_tag project.img %>
             <% if project.working %>
               <%= link_to "", project.url, target: "_blank", class: "project-link"  %>
+            <% else %>
+              <span class="disabled-project"><i class="fa fa-ban"></i> offline</span>
             <% end %>
             <div class="project-info">
               <h3><%= project.title %></h3>

@@ -2,14 +2,14 @@
   url: http://www.webdesigner.world/
   working: true
   title: Web Designer World
-  description: Hello
+  description: Side project that I coded over a weekend, just a collection of the resources that I found useful and use daily as a web designer, to share to my students instead of sending a bunch of links.
 - img: capvauban.png
   url: http://www.cap-vauban.com/
   working: true
   title: Cap Vauban properties
-  description: Hello
+  description: Freelance project, a one page website to display the property information, prices, reviews and request a booking for two flats located in the Antibes, south of France.
 - img: likeminded.png
   url: https://like-minded-app.herokuapp.com/
   working: false
   title: Like Minded
-  description: Hello
+  description: Website to get your personal travel advice from your friends, this was my final project during the Le Wagon bootcamp, it was build by 3 awesome people & I during the 10 last days of the camp.
