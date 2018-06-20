@@ -1,6 +1,15 @@
 - img: webdesigner.png
   url: http://www.webdesigner.world/
   working: true
+  title: Web Designer World
+  description: Hello
+- img: capvauban.png
+  url: http://www.cap-vauban.com/
+  working: true
+  title: Cap Vauban properties
+  description: Hello
 - img: likeminded.png
   url: https://like-minded-app.herokuapp.com/
   working: false
+  title: Like Minded
+  description: Hello

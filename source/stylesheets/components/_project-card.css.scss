@@ -1,7 +1,23 @@
-.project-card img {
-  width: 100%;
-  transition: .5s;
-  position: relative;
+.project-card {
+  padding: 16px;
+  background-color: white;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  border-radius: 2px;
+  img {
+    width: 100%;
+    transition: .5s;
+    position: relative;
+    border-radius: 2px;
+  }
+  .project-info {
+
+    h3 {
+      text-align: center;
+      margin-top: 10px;
+      font-family: $base-font;
+      color: #243b55;
+    }
+  }
 }
 
 .project-card .project-link {

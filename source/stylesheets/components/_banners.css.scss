@@ -8,6 +8,7 @@
     text-align: center;
     h1 {
       font-size: 60px;
+      color: #333333;
     }
   }
   canvas {
@@ -17,13 +18,10 @@
   }
 }
 
-.blue-banner {
-  background: linear-gradient(to right, #141e30, #243b55);
-  color: white;
-}
 
 .banner {
   padding: 100px 0;
+  background: #f7f7f7;
   .banner-title {
     text-align: center;
     h2 {
@@ -38,3 +36,7 @@
   }
 }
 
+.blue-banner {
+  background: linear-gradient(to right, #141e30, #243b55);
+  color: #e7ecf5;
+}
