@@ -40,7 +40,12 @@ function launchSlingshot() {
 
   // add bodies
   var ground = Bodies.rectangle(395, 550, 815, 10, { isStatic: true }),
-    rockOptions = { density: 0.004 },
+    rockOptions = {
+      density: 0.004,
+      render: {
+        fillStyle: '#F95531'
+      }
+    },
     rock = Bodies.polygon(50, 450, 8, 20, rockOptions),
     anchor = { x: 50, y: 450 },
     elastic = Constraint.create({
@@ -48,15 +53,20 @@ function launchSlingshot() {
       bodyB: rock,
       stiffness: 0.05
     });
-
+    // var colors = ['#4574A5', '#FB6D71', '#F95531'];
     var pyramid = Composites.pyramid(500, 300, 11, 10, 2, 0, function(x, y) {
-        return Bodies.rectangle(x, y, 25, 40);
+        return Bodies.rectangle(x, y, 25, 40, {
+          // render: {
+          //   fillStyle: colors[Math.floor(Math.random() * colors.length)],
+          // }
+         });
       });
 
     World.add(engine.world, [ground, pyramid, rock, elastic]);
 
     Events.on(engine, 'afterUpdate', function() {
       if (mouseConstraint.mouse.button === -1 && (rock.position.x > 70 || rock.position.y < 430)) {
+        document.getElementById('banner-sentence').innerHTML = "You little rebel, I like you already."
         rock = Bodies.polygon(50, 450, 7, 20, rockOptions);
         World.add(engine.world, rock);
         elastic.bodyB = rock;

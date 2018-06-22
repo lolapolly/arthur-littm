@@ -15,9 +15,15 @@
     position: absolute;
     bottom: 0;
     left: 0;
+    z-index: 2;
   }
 }
 
+#banner-sentence {
+  strong {
+    color: #F95531;
+  }
+}
 
 .banner {
   padding: 100px 0;
