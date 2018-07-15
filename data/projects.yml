@@ -10,9 +10,10 @@
   title: Cap Vauban properties
   description: A one page website to display the property information and request a booking for two flats located in the Antibes, south of France.
   category: freelance project
-- img: likeminded.png
-  url: https://like-minded-app.herokuapp.com/
-  working: false
-  title: Like Minded
+- img: listo.png
+  url: http://www.listoapp.co/
+  working: true
+  title: Listo App
   description: Website to get your personal travel advice from your friends, it was build by 3 awesome people in just 10 days.
-  category: le wagon project
+  description: Website to generate a Spotify playlist for your next festival, using Songkick and Spotify API to do that in just one click.
+  category: side project
