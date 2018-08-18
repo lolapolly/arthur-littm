@@ -21,8 +21,6 @@
     <meta property="og:site_name" content="arthurlittmann.com"/>
     <meta property="og:description" content="I decided to learn how to code to enter the tech industry. Now I work as a web developer and teacher for one of the leading coding bootcamps in the world."/>
 
-    <link rel="stylesheet" type="text/css" href="https://kenwheeler.github.io/slick/slick/slick-theme.css"/>
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
     <link href="stylesheets/all-301ae355.css" rel="stylesheet" />
     <script src="javascripts/all-94bfa13e.js"></script>
 
@@ -49,25 +47,25 @@
     <div class="row">
       <div class="col-xs-12 col-md-4">
         <div class="feature-card">
-          <i class="fa fa-code fa-fw"></i>
-          <h3>Web developer</h3>
-          <p>Web developer at <a href="https://www.switchup.org/research/best-coding-bootcamps" target="_blank">Le Wagon</a> coding bootcamp, helping to develop their educational platform.</p>
+          <img src="images/coding-47a63c36.svg" height="200" alt="Coding" />
+          <h3>Developer</h3>
+          <p>Fullstack developer at <a href="https://www.switchup.org/research/best-coding-bootcamps" target="_blank">Le Wagon</a>, developing their educational platforms and other web products.</p>
         </div>
       </div>
 
       <div class="col-xs-12 col-md-4">
         <div class="feature-card">
-          <i class="fa fa-graduation-cap fa-fw"></i>
+          <img src="images/teacher-9e00e599.svg" height="200" alt="Teacher" />
           <h3>Teacher</h3>
-          <p>Lead teacher in Le Wagon London, and also taught in other cities like Berlin, Milan, Bali, etc.</p>
+          <p>Lead teacher in Le Wagon London, and also taught in other cities like Berlin, Milan, Bali, Melbourne, etc.</p>
         </div>
       </div>
 
       <div class="col-xs-12 col-md-4">
         <div class="feature-card">
-          <i class="fa fa-line-chart fa-fw"></i>
-          <h3>Business developer</h3>
-          <p>Bachelor in Business Administration from ESSEC Business School.</p>
+          <img src="images/business-6db711ce.svg" height="200" alt="Business" />
+          <h3>Business graduate</h3>
+          <p>Bachelor in Business Administration from ESSEC Business School, focused on Marketing & Entrepreneurship.</p>
         </div>
       </div>
     </div>
@@ -82,17 +80,17 @@
     <div class="row">
       <div class="col-xs-offset-1 col-xs-10">
         <div class="banner-content-big ">
-          <p>Hi, I am a 24 years old developer and self-taught designer. Initially born in France, altough I spent most of my youth in Italy, now living in London.</p>
+          <p>Hi, I am a 24 year old developer and self-taught designer. Initially born in France, although I spent most of my youth in Italy, now living in London.</p>
 
           <hr class="separator">
 
           <h3>💼 Experience</h3>
           <ul>
             <li>
-              <strong>Le Wagon</strong> (Jan 2017 - Present), full-time employee and part of the team running things in London. I split my time between class management and engineering. Teaching all modules of the bootcamp (Ruby, OOP, Databases, Frontend, Javascript & Rails), coaching new teachers and developing the internal educational platforms.
+              <strong>Lead teacher & Developer</strong> at Le Wagon (Jan 2017 - Present), full-time employee and part of the team running things in London. I split my time between class management and engineering. Teaching all modules of the bootcamp (Ruby, OOP, Databases, Frontend, Javascript & Rails), coaching new teachers and developing the internal educational platforms.
             </li>
             <li>
-              <strong>LeKiosk</strong> (Jan 2015 - Jun 2015), business development internship for an up and coming digital start up in Paris, taking care of sales, accounting and B2B partnerships. That's where I first saw developers at work which gave me the drive to learn how to code myself.
+              <strong>Business Developer</strong> at LeKiosk (Jan 2015 - Jun 2015), internship at an up and coming digital start up in Paris, taking care of sales, accounting and B2B partnerships. That's where I first saw developers at work which gave me the drive to learn how to code myself.
             </li>
           </ul>
           <hr class="separator">
@@ -420,18 +418,7 @@
           </div>
         </div>
     </div>
-    <hr class="separator">
-    <div class="row videos-slick">
-          <iframe class="yt-video" src="https://www.youtube.com/embed/x2UilDXRq5U?rel=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
-          <iframe class="yt-video" src="https://www.youtube.com/embed/yzJZ8XbQi50?rel=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
-          <iframe class="yt-video" src="https://www.youtube.com/embed/A9YBH5MW78M?rel=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
-          <iframe class="yt-video" src="https://www.youtube.com/embed/fNxWjvGIrMw?rel=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
-          <iframe class="yt-video" src="https://www.youtube.com/embed/_yZwUsWAw4g?rel=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
-          <iframe class="yt-video" src="https://www.youtube.com/embed/ANyTf7wlH3Q?rel=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
-    </div>
-    <p class="padded-top text-right">
-      <a href="https://www.youtube.com/channel/UCC6p0L9affF4y4iIxB5jWoQ">See more 🎬</a>
-    </p>
+
 
   </div>
 </div>
@@ -442,8 +429,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/js-marker-clusterer/1.0.0/markerclusterer_compiled.js"></script>
 <script src="https://cdn.rawgit.com/apneadiving/Google-Maps-for-Rails/master/js_compilation/gmaps_google.js"></script>
-<!-- SLICK -->
-<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
 
 <script>
   $( document ).ready(function() {
@@ -486,14 +471,6 @@
 
     // MAP
     createMap();
-
-    // SLICK
-    $('.videos-slick').slick({
-      infinite: true,
-      slidesToShow: 3,
-      slidesToScroll: 3,
-      arrows: true,
-    });
   });
 </script>
 
