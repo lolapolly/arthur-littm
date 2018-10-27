@@ -7,6 +7,7 @@
     strong {
       color: $light-gray;
       text-decoration: line-through;
+      text-shadow: 3px 0px 0 $primary;
     }
   }
   h4 {
@@ -24,10 +25,12 @@
     }
     #snippet {
       left: -8px;
+      width: 160px;
     }
     #stroke {
       left: -20px;
       top: 3px;
+      width: 160px;
     }
   }
 }

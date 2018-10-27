@@ -1,18 +1,23 @@
+<div id="particles-js"></div>
 <div class="container">
-  <%= image_tag "favicon.svg", class: "logo" %>
+  <%= image_tag "logo.png", class: "logo" %>
   <div class="banner">
     <div>
-      <h1>This is <strong>Arthur</strong> Litt<strong>mann</strong>. 🔥</h1>
+      <h4>Hey there. 👋</h4>
+      <h1>This is <strong>Arthur</strong> Litt<strong>mann</strong>.</h1>
+      <hr>
       <h4>I am a
         <strong class="snippet">
-          <%= partial "snippet.svg" %>
+          <%= image_tag "snippet.png", id: "snippet" %>
           developer
         </strong> &
         <strong class="stroke">
-          <%= partial "stroke.svg" %>
+          <%= image_tag "stroke.png", id: "stroke" %>
           designer
         </strong> in London.
       </h4>
     </div>
   </div>
 </div>
+
+
