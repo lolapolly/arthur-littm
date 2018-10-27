@@ -1,34 +1,10 @@
 /* -------------------------------------
  * Fonts
  * ------------------------------------- */
-@import url('https://fonts.googleapis.com/css?family=PT+Serif:400,700');
+@import url('https://fonts.googleapis.com/css?family=Asap:600|PT+Serif:400,700');
 
-@font-face {
-  font-family:"Akzentica";
-  src: font-url('akzentica-master/akzentica_regular.eot');
-  src: font-url('akzentica-master/akzentica_regular.woff') format('woff'),
-       font-url('akzentica-master/akzentica_regular.ttf') format('truetype');
-  font-weight: normal;
-}
-
-@font-face {
-  font-family:"Akzentica";
-  src: font-url('akzentica-master/akzentica_bold.eot');
-  src: font-url('akzentica-master/akzentica_bold.woff') format('woff'),
-       font-url('akzentica-master/akzentica_bold.ttf') format('truetype');
-  font-weight: bold;
-}
-
-@font-face {
-  font-family:"Akzentica";
-  src: font-url('akzentica-master/akzentica_light.eot');
-  src: font-url('akzentica-master/akzentica_light.woff') format('woff'),
-       font-url('akzentica-master/akzentica_light.ttf') format('truetype');
-  font-weight: lighter;
-}
-
-$base-font: "Akzentica", "Open Sans", "Helvetica", "sans-serif";
-$header-font: "PT Serif", "Helvetica", "sans-serif";
+$base-font: "PT Serif", "Helvetica", "sans-serif";
+$header-font: "Asap", "Helvetica", "sans-serif";
 
 // Font-size and line-height
 $base-size: 16px;
@@ -39,14 +15,9 @@ $base-height: 1.4;
  * ------------------------------------- */
 // Scheme
 
-$light-gray: #DDDDDD;
-$dark-gray: #575757;
+$bg-gray: #F4F5F7;
+$light-gray: #B2BEC3;
+$dark-gray: #2D3436;
 
-$brand-color: #D23333;
-
-$red: #EE5F5B;
-$blue: #469AE0;
-$yellow: #FDB631;
-$orange: #E67E22;
-$green: #32B796;
-$gray: #000000;
+$primary: #85ECEB;
+$secondary: #FF7675;

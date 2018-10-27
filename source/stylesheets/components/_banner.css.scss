@@ -1,0 +1,33 @@
+.banner {
+  height: 40vh;
+  display: flex;
+  align-items: flex-end;
+  h1 {
+    font-size: 60px;
+    strong {
+      color: $light-gray;
+      text-decoration: line-through;
+    }
+  }
+  h4 {
+    font-size: 30px;
+    strong {
+      color: white;
+      text-shadow: 0 0 2px rgba(0,0,0,0.2);
+      position: relative;
+      margin: 0 10px;
+      font-family: $base-font;
+    }
+    #snippet, #stroke {
+      position: absolute;
+      z-index: -1;
+    }
+    #snippet {
+      left: -8px;
+    }
+    #stroke {
+      left: -20px;
+      top: 3px;
+    }
+  }
+}
