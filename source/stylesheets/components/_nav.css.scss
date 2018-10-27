@@ -1,0 +1,15 @@
+.navb {
+  display: flex;
+  height: 90px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  .logo {
+    width: 80px;
+  }
+  .menu {
+    color: $dark-gray;
+    font-size: 20px;
+    z-index: 2;
+  }
+}

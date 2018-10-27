@@ -1,0 +1,13 @@
+.footer {
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: $light-gray;
+  text-shadow: 2px 1px 0px $primary;
+  a {
+    font-size: 30px;
+    z-index: 3;
+    color: $light-gray;
+  }
+}
