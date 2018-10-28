@@ -1,9 +1,10 @@
 /* -------------------------------------
  * Fonts
  * ------------------------------------- */
-@import url('https://fonts.googleapis.com/css?family=Asap:600|PT+Serif:400,700');
+@import url('https://fonts.googleapis.com/css?family=Asap:600|PT+Serif:700|PT+Sans:400');
 
-$base-font: "PT Serif", "Helvetica", "sans-serif";
+$base-font-sans: "PT Sans", "Helvetica", "sans-serif";
+$base-font-serif: "PT Serif", "Helvetica", "sans-serif";
 $header-font: "Asap", "Helvetica", "sans-serif";
 
 // Font-size and line-height

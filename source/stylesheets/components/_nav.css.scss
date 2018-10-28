@@ -13,3 +13,7 @@
     z-index: 2;
   }
 }
+
+.unselectable {
+  user-select: none;
+}
