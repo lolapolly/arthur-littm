@@ -7,13 +7,9 @@
   .logo {
     width: 80px;
   }
-  .menu {
-    color: $dark-gray;
-    font-size: 20px;
-    z-index: 2;
-  }
 }
 
 .unselectable {
   user-select: none;
 }
+

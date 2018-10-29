@@ -25,10 +25,17 @@
 
   </head>
   <body>
+    <div id="particles-js"></div>
+    <%= partial "layouts/menu" %>
+    <%= partial "layouts/navbar" %>
+
     <%= yield %>
 
     <%= partial "layouts/footer" %>
+
     <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenLite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TimelineLite.min.js"></script>
     <%= javascript_include_tag  "all" %>
     <%= google_analytics_tag %>
   </body>

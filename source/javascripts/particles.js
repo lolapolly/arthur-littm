@@ -1,7 +1,7 @@
 var config = {
   "particles": {
     "number": {
-      "value": 10,
+      "value": 70,
       "density": {
         "enable": true,
         "value_area": 2000
@@ -46,7 +46,7 @@ var config = {
       }
     },
     "line_linked": {
-      "enable": false
+      "enable": true
     },
     "move": {
       "enable": true,
