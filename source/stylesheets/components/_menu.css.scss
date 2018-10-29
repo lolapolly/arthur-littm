@@ -1,4 +1,4 @@
-$menu-color: $dark-gray;
+$menu-color: $light-gray;
 $cross-color: white;
 $snappy : cubic-bezier(0.694,  0.048, 0.335, 1.000);
 
@@ -8,14 +8,14 @@ $snappy : cubic-bezier(0.694,  0.048, 0.335, 1.000);
     height: 20px;
     position: relative;
     transition: transform 0.3s $snappy;
-    // border: 1px solid white;
     span {
       display: block;
       width: 100%;
       height: 4px;
       background-color: $menu-color;
       margin-top: 8px;
-      transition: background-color 0.5s $snappy;
+      // transition: background-color 0.5s $snappy;
+      box-shadow: 2px 2px 0 $primary;
       &:first-child {
         margin-top: 0;
         transform: scaleX(1);
@@ -38,7 +38,8 @@ $snappy : cubic-bezier(0.694,  0.048, 0.335, 1.000);
       margin-left: -5px;
       transition: height 0.4s $snappy;
       z-index: 11;
-      transition: background-color 0.5s $snappy;
+      box-shadow: 2px 2px 0 $primary;
+
     }
   }
   &.is-menu-open {
@@ -46,7 +47,7 @@ $snappy : cubic-bezier(0.694,  0.048, 0.335, 1.000);
       transform: rotate(45deg);
       transition-delay: 0.4s;
       span {
-        background-color: $cross-color;
+        // background-color: $cross-color;
         &:first-child {
           transform: scaleX(0);
           transition: transform 0.2s $snappy;
@@ -60,7 +61,7 @@ $snappy : cubic-bezier(0.694,  0.048, 0.335, 1.000);
         height: 50px;
         transition: height 0.2s $snappy;
         transition-delay: 0.3s;
-        background-color: $cross-color;
+        // background-color: $cross-color;
       }
     }
   }
@@ -74,22 +75,28 @@ $snappy : cubic-bezier(0.694,  0.048, 0.335, 1.000);
   width: 0vw;
   height: 100vh;
   z-index: 10;
-  transition: width .8s;
+  transition: width .5s;
   position: absolute;
   top: 0;
   right: 0;
   display: flex;
+  h1 {
+    display: none;
+  }
 }
 
 .menu-content.is-content-open {
   width: 100vw;
+  h1 {
+    display: block;
+  }
 }
 
 .menu-section {
   background-color: $primary;
-  height: 100%;
-  flex: 0 0 25%;
+  height: 100vh;
   display: flex;
+  flex: 0 0 25%;
   align-items: center;
   justify-content: center;
   padding: 0 30px;
@@ -98,16 +105,22 @@ $snappy : cubic-bezier(0.694,  0.048, 0.335, 1.000);
   h1 {
     text-align: center;
     color: white;
+    margin: 0;
   }
-  &:hover {
-    background-color: rgba(133, 236, 235, 0.8);
+  &:hover, &:focus {
+    background-color: white;
     text-decoration: none;
+    h1 {
+      color: $dark-gray;
+    }
   }
 }
 
-.section-particles {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
+@media(max-width: 720px) {
+  .menu-content {
+    display: block;
+  }
+  .menu-section {
+    height: 25vh;
+  }
 }
