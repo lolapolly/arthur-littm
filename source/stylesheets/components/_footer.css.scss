@@ -1,65 +1,7 @@
-$linkedin: #0473B3;
-$github: #343434;
-$dribbble: #DC4C84;
-$youtube: #FC0404;
-$instagram: #bc1888;
-
 .footer {
   height: 90px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   color: $light-gray;
-  span {
-    text-shadow: 1px 1px 0px $primary;
-  }
 }
-
-.footer {
-  .links {
-    display: flex;
-    a {
-      font-size: 22px;
-      text-decoration: none;
-      background: $light-gray;
-      box-shadow: 3px 2px 0px $primary;
-      color: $bg-gray;
-      margin-right: 8px;
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition:
-      border-radius 0.8s cubic-bezier(1, 0, 0.5, 1),
-      transform 0.6s cubic-bezier(1, 0, 1, 1),
-      background 0.6s cubic-bezier(1, 0, 0.7, 1),
-      box-shadow 0.4s;
-    }
-    a:hover {
-      border-radius: 5px;
-      transform: scale(1.1);
-      box-shadow: 0 0 0 $primary;
-    }
-    a:hover.linkedin {
-      background: $linkedin;
-    }
-    a:hover.github {
-      background: $github;
-    }
-    a:hover.youtube {
-      background: $youtube;
-    }
-    a:hover.dribbble {
-      background: $dribbble;
-    }
-    a:hover.instagram {
-      background: $instagram;
-    }
-  }
-}
-
-
-
-

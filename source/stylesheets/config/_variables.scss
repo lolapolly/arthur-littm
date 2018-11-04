@@ -1,14 +1,22 @@
 /* -------------------------------------
  * Fonts
  * ------------------------------------- */
-@import url('https://fonts.googleapis.com/css?family=Asap:600|PT+Serif:700|PT+Sans:400');
+@import url('https://fonts.googleapis.com/css?family=Asap:400,600');
 
-$base-font-sans: "PT Sans", "Helvetica", "sans-serif";
-$base-font-serif: "PT Serif", "Helvetica", "sans-serif";
-$header-font: "Asap", "Helvetica", "sans-serif";
+@font-face {
+    font-family: 'Seattle sans';
+    src: url('../fonts/seattle_sans-webfont.woff2') format('woff2'),
+         url('../fonts/seattle_sans-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+$base-font: "Asap", "Helvetica", "sans-serif";
+$header-font: "Seattle sans", "Helvetica", "sans-serif";
 
 // Font-size and line-height
-$base-size: 16px;
+$base-size: 18px;
 $base-height: 1.4;
 
 /* -------------------------------------
