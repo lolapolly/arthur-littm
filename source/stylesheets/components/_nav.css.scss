@@ -22,10 +22,14 @@
     margin: 0 16px;
     transition: .3s;
   }
-  a.active, a.active:hover {
-    color: $dark-gray;
-  }
   a:hover {
     color: $primary;
   }
+}
+
+.normal .menu-nav a.active, .normal .menu-nav a.active:hover {
+  color: $bg-dark;
+}
+.dark .menu-nav a.active, .normal .menu-nav a.active:hover {
+  color: $bg-light;
 }

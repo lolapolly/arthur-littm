@@ -26,7 +26,7 @@ var config = {
       }
     },
     "opacity": {
-      "value": 0.5,
+      "value": 0.4,
       "random": false,
       "anim": {
         "enable": false,
@@ -46,11 +46,12 @@ var config = {
       }
     },
     "line_linked": {
-      "enable": true
+      "enable": true,
+      "opacity": 0.04,
     },
     "move": {
       "enable": true,
-      "speed": 8.017060304327615,
+      "speed": 8,
       "direction": "none",
       "random": true,
       "straight": false,
@@ -67,7 +68,7 @@ var config = {
     "detect_on": "window",
     "events": {
       "onhover": {
-        "enable": true,
+        "enable": false,
         "mode": "grab"
       },
       "onclick": {

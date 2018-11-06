@@ -1,0 +1,13 @@
+.about-me {
+  background-position: center;
+  background-size: cover;
+  min-height: calc(100vh - 180px);
+  h1 {
+    margin: 60px 0px;
+    font-size: 70px;
+  }
+  p {
+    font-size: 20px;
+    line-height: 40px;
+  }
+}

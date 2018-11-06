@@ -4,7 +4,6 @@ $dribbble: #DC4C84;
 $youtube: #FC0404;
 $instagram: #bc1888;
 
-
 .banner {
   height: calc(100vh - 180px);
   display: flex;
@@ -14,14 +13,14 @@ $instagram: #bc1888;
     margin: 0;
   }
   h1 {
-    line-height: 70px;
     span {
       color: white;
-      background: url(https://okonogray.files.wordpress.com/2015/07/3025992-poster-p-designwork.jpg) no-repeat;
+      padding: 4px;
+      background: url(../images/snippetbgc.png) no-repeat;
       background-size: cover;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+      text-shadow: 0px 0px 0px rgba(0,0,0,0.1);
     }
   }
 
@@ -31,7 +30,7 @@ $instagram: #bc1888;
       font-size: 22px;
       text-decoration: none;
       background: $light-gray;
-      color: $bg-gray;
+      color: $dark-gray;
       margin-right: 8px;
       width: 40px;
       height: 40px;

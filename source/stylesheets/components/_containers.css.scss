@@ -1,0 +1,10 @@
+.smaller-container {
+  width: 60%;
+  margin: auto;
+}
+@media (max-width: 950px) {
+  .smaller-container {
+    width: 80%;
+    margin: auto;
+  }
+}

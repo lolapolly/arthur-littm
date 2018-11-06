@@ -5,11 +5,20 @@
 
 // General style
 $font-family-sans-serif:  $base-font;
-$body-bg:                 $bg-gray;
+$body-bg:                 $bg-light;
 $font-size-base:          $base-size;
 $line-height-base:        $base-height;
 $headings-font-family:    $header-font;
 
+body.normal {
+  background-color: $body-bg;
+  color: $bg-dark;
+}
+
+body.dark {
+  background-color: $bg-dark;
+  color: $bg-light;
+}
 // Semantic color scheme
 // => http://getbootstrap.com/customize/#colors
 
