@@ -9,7 +9,7 @@
     <!-- For Bootstrap responsiveness -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="images/favicon-949aa866.png" rel="icon" type="image/png" />
+    <link href="../images/favicon-949aa866.png" rel="icon" type="image/png" />
 
     <!-- Use title if it's in the page YAML frontmatter -->
     <title>Arthur Littmann | Web developer</title>
@@ -21,7 +21,7 @@
     <meta property="og:site_name" content="arthur-littm.com"/>
     <meta property="og:description" content="I decided to learn how to code to enter the tech industry. Now I work as a web developer and teacher for one of the leading coding bootcamps in the world."/>
 
-    <link href="stylesheets/all-18dbb1bc.css" rel="stylesheet" />
+    <link href="../stylesheets/all-18dbb1bc.css" rel="stylesheet" />
 
   </head>
   <body>
@@ -30,13 +30,13 @@
     <div class="container">
   <div class="navb unselectable">
     <a href="/">
-      <img src="images/logo-1a93620b.png" class="logo unselectable" alt="Logo" />
+      <img src="../images/logo-1a93620b.png" class="logo unselectable" alt="Logo" />
     </a>
     <div class="menu-nav hidden-xs hidden-sm">
-      <a href="/" class="active">Home</a>
+      <a href="/" class="">Home</a>
       <a href="/about-me" class="">About me</a>
       <a href="#" class="">My work <span class="label label-warning">coming soon!</span></a>
-      <a href="/get-in-touch" class="">Get in touch</a>
+      <a href="/get-in-touch" class="active">Get in touch</a>
     </div>
 
     <div class="hidden-md hidden-lg">
@@ -46,34 +46,24 @@
 </div>
 
 
-    <div class="container">
-  <div class="banner">
-    <div class="unselectable">
-      <h3 class="hidden-xs hidden-sm">Hi, my name is Arthur.</h3>
-      <h1>I am a <span>developer</span> & <span>designer</span> in London.</h1>
-      <hr>
-      <div class="links">
-        <a href="https://www.linkedin.com/in/arthur-littmann/" target="_blank" class="linkedin">
-          <i class="fab fa-linkedin-in"></i>
-        </a>
-        <a href="https://github.com/arthur-littm" target="_blank" class="github">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="https://dribbble.com/arthur-littm" target="_blank" class="dribbble">
-          <i class="fab fa-dribbble"></i>
-        </a>
-        <a href="https://www.youtube.com/channel/UCC6p0L9affF4y4iIxB5jWoQ" target="_blank" class="youtube">
-          <i class="fab fa-youtube"></i>
-        </a>
-        <a href="https://www.instagram.com/arthur_littm/" target="_blank" class="instagram">
-          <i class="fab fa-instagram"></i>
-        </a>
-      </div>
+    <div class="container get-in-touch">
+  <div class="row">
+    <div class="col xs-12 col-md-6">
+      <h1 class="title">Get in touch</h1>
+      <hr class="title-line">
+      <form action="https://formspree.io/arthur.littmann@gmail.com" method="POST" />
+        <input type="hidden" name="_next" value="https://site.io/thanks.html" />
+        <input class="form-control" type="text" name="fullname" placeholder="Chuck Norris">
+        <input class="form-control" type="text" name="_replyto" placeholder="chuck.norris@hotmail.com">
+        <textarea class="form-control" name="message" rows="5" placeholder="Did you know I can unit test entire applications with a single assert?"></textarea>
+        <input type="submit" value="Submit" class="btn btn-submit">
+      </form>
+    </div>
+    <div class="col xs-12 col-md-6">
+      <img src="../images/getintouch-0642aa00.svg" class="contact-illustration" alt="Getintouch" />
     </div>
   </div>
 </div>
-
-
 
 
     <div class="container">
@@ -86,7 +76,7 @@
     <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenLite.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TimelineLite.min.js"></script>
-    <script src="javascripts/all-58686738.js"></script>
+    <script src="../javascripts/all-58686738.js"></script>
     <script type="text/javascript">
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
