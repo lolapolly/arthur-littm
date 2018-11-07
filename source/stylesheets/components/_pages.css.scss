@@ -1,0 +1,43 @@
+.about-me {
+  padding-top: 60px;
+  min-height: calc(100vh - 180px);
+  p {
+    font-size: 20px;
+    line-height: 40px;
+  }
+  img {
+    width: 100%;
+  }
+  .section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 60px;
+  }
+  .left, .right {
+    flex: 0 0 40%;
+  }
+}
+
+@media (max-width: 900px) {
+  .about-me {
+    .left, .right {
+      flex: 0 0 100%;
+    }
+    .section.reverse-mobile {
+      flex-direction: column-reverse;
+    }
+    img {
+      margin-bottom: 24px;
+    }
+  }
+}
+
+.get-in-touch {
+  padding-top: 60px;
+  min-height: calc(100vh - 180px);
+  .contact-illustration {
+    width: 100%;
+  }
+}

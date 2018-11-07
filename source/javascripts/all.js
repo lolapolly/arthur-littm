@@ -1,4 +1,5 @@
 //= require jquery
-//= require bootstrap
+// = require bootstrap
 //= require underscore
 //= require_tree .
+
