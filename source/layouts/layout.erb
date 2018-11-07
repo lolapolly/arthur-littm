@@ -24,9 +24,7 @@
     <%= stylesheet_link_tag "all" %>
 
   </head>
-  <% dark_pages = ["about-me.html"] %>
-  <% mode = dark_pages.include?(current_page.path) ? "dark" : "normal" %>
-  <body class="<%= mode %>">
+  <body>
 
     <div id="particles-js"></div>
     <%= partial "layouts/navbar" %>
