@@ -47,11 +47,9 @@ a:hover {
 }
 
 .thanks {
-  text-align: center;
-  position: relative;
   min-height: calc(100vh - 180px);
-  h1 {
-    font-size: 70px;
+  .title {
+     padding-top: 60px;
   }
 }
 

@@ -11,20 +11,22 @@
   textarea {
     resize: none;
   }
+}
 
-  .btn-submit {
-    padding: 16px 80px;
-    color: white;
-    background-color: $primary;
-    font-family: $header-font;
-    border-radius: 30px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
-    transition: .3s;
-  }
-  .btn-submit:hover {
-    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-  }
-  .btn-submit:focus {
-    outline: none;
-  }
+.btn-submit {
+  padding: 16px 80px;
+  color: white;
+  background-color: $primary;
+  font-family: $header-font;
+  border-radius: 30px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+  transition: .3s;
+}
+.btn-submit:hover {
+  color: white;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+.btn-submit:focus {
+  color: white;
+  outline: none;
 }

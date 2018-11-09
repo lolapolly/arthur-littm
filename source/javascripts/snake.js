@@ -1,8 +1,8 @@
 
 var config = {
   type: Phaser.WEBGL,
-  width: 640,
-  height: 480,
+  width: 380,
+  height: 270,
   backgroundColor: '#2D3436',
   parent: 'phaser-snake',
   scene: {

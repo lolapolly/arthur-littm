@@ -1,9 +1,16 @@
 <div class="container thanks">
-
-
-  <h1>Messaged recieved!</h1>
-  <p>I'll answer you as soon as I find that missing <code>&lt;/div&gt;</code> I've been looking for the last 8 hours in one of my projects.</p>
-  <div id="phaser-snake">
-
+  <div class="row">
+    <div class="col xs-12 col-md-6">
+      <h1 class="title">Thanks for the message!</h1>
+      <hr class="title-line">
+      <p>I will answer you as soon as I find the missing <code>&lt;/div&gt;</code> I’ve been searching for the past 8 hours.  While you wait you can play snake.</p>
+      <%= link_to "Return home", "/", class: "btn btn-submit" %>
+    </div>
+    <div class="col xs-12 col-md-6">
+      <div class="snake-container hidden-xs">
+        <%= partial "images/arcade.svg" %>
+        <div id="phaser-snake"></div>
+      </div>
+    </div>
   </div>
 </div>
